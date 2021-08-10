@@ -7,8 +7,8 @@
     <ClCompile Include="..\..\src\AboutDlg\URLCtrl.cpp">
       <Filter>src\AboutDlg</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\NppAPI\StaticDialog.cpp">
-      <Filter>src\NppAPI</Filter>
+    <ClCompile Include="..\..\src\NppAPI\DockingFeature\StaticDialog.cpp">
+      <Filter>src\NppAPI\DockingFeature</Filter>
     </ClCompile>
     <ClCompile Include="..\..\src\SQLite\SqliteHelper.cpp">
       <Filter>src\SQLite</Filter>
@@ -90,20 +90,20 @@
     <ClInclude Include="..\..\src\LibHelpers.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\src\NppAPI\Window.h">
-      <Filter>src\NppAPI</Filter>
+    <ClInclude Include="..\..\src\NppAPI\DockingFeature\Docking.h">
+      <Filter>src\NppAPI\DockingFeature</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\src\NppAPI\Docking.h">
-      <Filter>src\NppAPI</Filter>
+    <ClInclude Include="..\..\src\NppAPI\DockingFeature\dockingResource.h">
+      <Filter>src\NppAPI\DockingFeature</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\src\NppAPI\dockingResource.h">
-      <Filter>src\NppAPI</Filter>
+    <ClInclude Include="..\..\src\NppAPI\DockingFeature\DockingDlgInterface.h">
+      <Filter>src\NppAPI\DockingFeature</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\src\NppAPI\DockingDlgInterface.h">
-      <Filter>src\NppAPI</Filter>
+    <ClInclude Include="..\..\src\NppAPI\DockingFeature\StaticDialog.h">
+      <Filter>src\NppAPI\DockingFeature</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\src\NppAPI\ImageListSet.h">
-      <Filter>src\NppAPI</Filter>
+    <ClInclude Include="..\..\src\NppAPI\DockingFeature\Window.h">
+      <Filter>src\NppAPI\DockingFeature</Filter>
     </ClInclude>
     <ClInclude Include="..\..\src\NppAPI\Notepad_plus_msgs.h">
       <Filter>src\NppAPI</Filter>
@@ -115,12 +115,6 @@
       <Filter>src\NppAPI</Filter>
     </ClInclude>
     <ClInclude Include="..\..\src\NppAPI\Scintilla.h">
-      <Filter>src\NppAPI</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\NppAPI\StaticDialog.h">
-      <Filter>src\NppAPI</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\NppAPI\ToolBar.h">
       <Filter>src\NppAPI</Filter>
     </ClInclude>
     <ClInclude Include="..\..\src\AboutDlg\AboutDialog.h">

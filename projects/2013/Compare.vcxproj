@@ -96,7 +96,7 @@
       <Optimization>Disabled</Optimization>
       <IntrinsicFunctions>false</IntrinsicFunctions>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
-      <AdditionalIncludeDirectories>../../src;../../src/Engine;../../src/AboutDlg;../../src/NavDlg;../../src/NppAPI;../../src/SettingsDlg;../../src/ProgressDlg;../../src/XpmIcons;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../src;../../src/Engine;../../src/AboutDlg;../../src/NavDlg;../../src/NppAPI;../../src/NppAPI/DockingFeature;../../src/SettingsDlg;../../src/ProgressDlg;../../src/XpmIcons;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_WIN32_WINNT=0x0501;WIN32_LEAN_AND_MEAN;NOCOMM;_WINDOWS;_USRDLL;COMPARE_EXPORTS;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
@@ -129,7 +129,7 @@ copy "..\..\libs\x86\*.dll" "$(OutDir)ComparePlugin"</Command>
       <Optimization>Disabled</Optimization>
       <IntrinsicFunctions>false</IntrinsicFunctions>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
-      <AdditionalIncludeDirectories>../../src;../../src/Engine;../../src/AboutDlg;../../src/NavDlg;../../src/NppAPI;../../src/SettingsDlg;../../src/ProgressDlg;../../src/XpmIcons;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../src;../../src/Engine;../../src/AboutDlg;../../src/NavDlg;../../src/NppAPI;../../src/NppAPI/DockingFeature;../../src/SettingsDlg;../../src/ProgressDlg;../../src/XpmIcons;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_WIN64;_WIN32_WINNT=0x0501;WIN32_LEAN_AND_MEAN;NOCOMM;_WINDOWS;_USRDLL;COMPARE_EXPORTS;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
@@ -163,7 +163,7 @@ copy "..\..\libs\x64\*.dll" "$(OutDir)ComparePlugin"</Command>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <OmitFramePointers>false</OmitFramePointers>
-      <AdditionalIncludeDirectories>../../src;../../src/Engine;../../src/AboutDlg;../../src/NavDlg;../../src/NppAPI;../../src/SettingsDlg;../../src/ProgressDlg;../../src/XpmIcons;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../src;../../src/Engine;../../src/AboutDlg;../../src/NavDlg;../../src/NppAPI;../../src/NppAPI/DockingFeature;../../src/SettingsDlg;../../src/ProgressDlg;../../src/XpmIcons;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_WIN32_WINNT=0x0501;WIN32_LEAN_AND_MEAN;NOCOMM;_WINDOWS;_USRDLL;COMPARE_EXPORTS;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
@@ -200,7 +200,7 @@ copy "..\..\libs\x86\*.dll" "$(OutDir)ComparePlugin"</Command>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <OmitFramePointers>false</OmitFramePointers>
-      <AdditionalIncludeDirectories>../../src;../../src/Engine;../../src/AboutDlg;../../src/NavDlg;../../src/NppAPI;../../src/SettingsDlg;../../src/ProgressDlg;../../src/XpmIcons;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../src;../../src/Engine;../../src/AboutDlg;../../src/NavDlg;../../src/NppAPI;../../src/NppAPI/DockingFeature;../../src/SettingsDlg;../../src/ProgressDlg;../../src/XpmIcons;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_WIN64;_WIN32_WINNT=0x0501;WIN32_LEAN_AND_MEAN;NOCOMM;_WINDOWS;_USRDLL;COMPARE_EXPORTS;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
@@ -244,7 +244,7 @@ copy "..\..\libs\x64\*.dll" "$(OutDir)ComparePlugin"</Command>
     <ClCompile Include="..\..\src\LibGit2\LibGit2Helper.cpp" />
     <ClCompile Include="..\..\src\NavDlg\NavDialog.cpp" />
     <ClCompile Include="..\..\src\NppHelpers.cpp" />
-    <ClCompile Include="..\..\src\NppAPI\StaticDialog.cpp" />
+    <ClCompile Include="..\..\src\NppAPI\DockingFeature\StaticDialog.cpp" />
     <ClCompile Include="..\..\src\ProgressDlg\ProgressDlg.cpp" />
     <ClCompile Include="..\..\src\LibHelpers.cpp" />
     <ClCompile Include="..\..\src\SQLite\SqliteHelper.cpp" />
@@ -267,17 +267,15 @@ copy "..\..\libs\x64\*.dll" "$(OutDir)ComparePlugin"</Command>
     <ClInclude Include="..\..\src\NppHelpers.h" />
     <ClInclude Include="..\..\src\ProgressDlg\ProgressDlg.h" />
     <ClInclude Include="..\..\src\Resource.h" />
-    <ClInclude Include="..\..\src\NppAPI\Docking.h" />
-    <ClInclude Include="..\..\src\NppAPI\dockingResource.h" />
-    <ClInclude Include="..\..\src\NppAPI\DockingDlgInterface.h" />
-    <ClInclude Include="..\..\src\NppAPI\ImageListSet.h" />
+    <ClInclude Include="..\..\src\NppAPI\DockingFeature\Docking.h" />
+    <ClInclude Include="..\..\src\NppAPI\DockingFeature\dockingResource.h" />
+    <ClInclude Include="..\..\src\NppAPI\DockingFeature\DockingDlgInterface.h" />
+    <ClInclude Include="..\..\src\NppAPI\DockingFeature\StaticDialog.h" />
+    <ClInclude Include="..\..\src\NppAPI\DockingFeature\Window.h" />
     <ClInclude Include="..\..\src\NppAPI\Notepad_plus_msgs.h" />
     <ClInclude Include="..\..\src\NppAPI\menuCmdID.h" />
     <ClInclude Include="..\..\src\NppAPI\PluginInterface.h" />
     <ClInclude Include="..\..\src\NppAPI\Scintilla.h" />
-    <ClInclude Include="..\..\src\NppAPI\StaticDialog.h" />
-    <ClInclude Include="..\..\src\NppAPI\ToolBar.h" />
-    <ClInclude Include="..\..\src\NppAPI\Window.h" />
     <ClInclude Include="..\..\src\Engine\diff.h" />
     <ClInclude Include="..\..\src\Engine\varray.h" />
     <ClInclude Include="..\..\src\LibHelpers.h" />

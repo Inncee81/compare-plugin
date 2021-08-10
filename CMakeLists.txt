@@ -51,7 +51,7 @@ set (project_rc_files
 )
 
 set (project_sources
-    src/NppAPI/StaticDialog.cpp
+    src/NppAPI/DockingFeature/StaticDialog.cpp
     src/AboutDlg/URLCtrl.cpp
     src/AboutDlg/AboutDialog.cpp
     src/SettingsDlg/ColorCombo.cpp
@@ -72,6 +72,7 @@ include_directories (
 	${win32_inc_dir}
 	src/
 	src/NppAPI/
+	src/NppAPI/DockingFeature/
 	src/XpmIcons/
 	src/Engine/
 	src/AboutDlg/
